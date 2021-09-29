@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: rgb(229, 235, 234);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    
+    
+    }
+
+.container {
+
+    width: 1140px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+#menu-container{
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+#menu {
+    padding: 10px;
+    background-color: rgba(255,0,0,0.4);
+    position: sticky;
+    top: 0;
+    
+}
+#menu li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 30px;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px #3a1b1b;
+}
+#menu a{
+    color: inherit;
+    text-decoration: none;
+}
+
+#post-container {
+
+    width: 75%;
+    float: left;
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+	
+   
+}
+.post{
+    background-color: white;
+    margin-bottom: 10px;
+    line-height: 25px;
+    text-align: justify;
+    box-sizing: border-box;
+	text-indent:10px;
+	border-radius:2%;
+	box-shadow:0 0 0 1px rgba(0,0,0,.06);
+}
+
+#others-container {
+
+    width: 25%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 10px 10px 0;
+    
+
+
+}
+
+#others {
+    background-color: white;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+}
+.others-post{
+    padding-left: 10px;
+    
+}
+.others-post li{
+   list-style-type: none;
+   font-size: 16px;
+   color: rgb(75, 75, 194);
+    
+}
+.others-post img{
+    width: 20px;
+    margin-right: 10px;
+}
+#others h4{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#others a{
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post {
+    padding: 20px;
+    
+}
+
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.post img {
+
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.post h3{
+    text-align: center;
+}
+
+.author {
+    padding: 10px;
+    background-color: white;
+	margin-bottom: 10px;
+}
+.author-post::after {
+    content: "Yazar : Gül Naz Kurt";
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 25px;
+    
+}
+.author img{
+    width: 100%;
+}
+.share{
+ 	padding:10px;
+	box-sizing:border-box;
+	background-color:white;
+}
+.share h4{
+	padding:10px 0 10px 0;
+}
+.share i{
+	margin-right:10px;
+	opacity:0.5;
+	
+}
+.share a{
+    text-decoration: none;
+    color: inherit;
+}
+.share li{
+    list-style-type: none;
+    text-align:unset;
+    margin-bottom: 5px;
+   
+}
+.share i:hover{
+	opacity:1;
+}
+	
+
+

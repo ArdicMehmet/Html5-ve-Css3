@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Text Biçim ve Hizalama</title>
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200&display=swap" rel="stylesheet">
+    <style>
+        /* Text Biçimlendirme */
+        body {
+            width: 700px;
+            margin: 30px auto;
+            font-size: 22px;
+            /* Blog sayfaları için min 22px olsun önerilen*/
+        }
+
+        h2 {
+            text-transform: capitalize;    /* Sadece Baş Harfler Büyük
+            uppercase : TÜM HARFLER BÜYÜK
+            lowercase : tüm harfler küçük*/
+        }
+
+        
+        p {
+            font-family: 'Stick No Bills', sans-serif;
+            line-height: 150%;
+            word-spacing: 3px;
+            /* Kelimeler arası boşluk*/
+            text-indent: 5px;
+            /* Paragraf başı yapma*/
+            letter-spacing: 2px;
+            /* Harf aralıkları*/
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .link {
+            text-decoration: none;
+            color: red;
+        }
+
+        p.first::before {
+            content: "Sağa Hizalama";
+            font-weight: bold;
+            display: block;
+            font-size: 25px;
+        }
+
+        p.second::before {
+            content: "Merkeze Hizalama";
+            font-weight: bold;
+            display: block;
+
+        }
+
+        p.thirth::before {
+            content: "Sola Hizalama";
+            font-weight: bold;
+            display: block;
+        }
+        p.forth::before {
+            content: "Sola ve Sağa Hizalama";
+            font-weight: bold;
+            display: block;
+            text-align: center;
+        }
+
+        /* Text Hizalama */
+
+        p.first {
+            text-align: right;
+        }
+
+        p.second {
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+
+
+            /*Css 3 ile gelen özellik o yüzden tüm tarayıcılar için bunları yapıyoruz*/
+            column-count: 3;
+            -webkit-column-count: 3; /* opera chrome safari*/
+            -moz-column-count: 3;    /* monzilla           */
+
+            column-rule: 1px solid blue;
+            -webkit-column-rule: 1px solid blue;
+            -moz-column-rule: 1px solid blue;
+        }
+
+        p.thirth {
+            text-align: left;
+        }
+        p.forth{
+            text-align: justify;  /* Kelimeler sola ve sağa yapışıyor*/
+        }
+
+        a {
+            text-align: right;
+            /*Yaparsak olmaz çünkü inline etiket*/
+            text-decoration: none;
+            color: seagreen;
+        }
+
+        div.align{
+            text-align: center;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing.</h2>
+    <p class="first">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati nihil, recusandae cumque alias
+        cum expedita
+        perferendis sapiente non dolorum quisquam minima. Sit nihil quidem perspiciatis obcaecati ut? Neque, itaque
+        ipsam corrupti accusamus tempore consequatur minus atque totam officiis ea
+        <span class="bold italic">
+            <a class="link" href="#">voluptatum.</a>
+        </span>
+    </p>
+    <p class="second">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati nihil, recusandae cumque alias
+        cum expedita
+        perferendis sapiente non dolorum quisquam minima. Sit nihil quidem perspiciatis obcaecati ut? Neque, itaque
+        ipsam corrupti accusamus tempore consequatur minus atque totam officiis ea
+        <span class="bold italic">
+            <a class="link" href="#">voluptatum.</a>
+        </span>
+    </p>
+    <p class="thirth">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati nihil, recusandae cumque alias
+        cum expedita
+        perferendis sapiente non dolorum quisquam minima. Sit nihil quidem perspiciatis obcaecati ut? Neque, itaque
+        ipsam corrupti accusamus tempore consequatur minus atque totam officiis ea
+        <span class="bold italic">
+            <a class="link" href="#">voluptatum.</a>
+        </span>
+    </p>
+    <div class="align">  <!-- Linkler inline olduğu için dive verdik text-align özelliğini-->
+        <a href="">Link1</a>
+        <a href="">Link2</a>
+        <a href="">Link3</a>
+    </div>
+    <p class="forth">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati nihil, recusandae cumque alias
+        cum expedita
+        perferendis sapiente non dolorum quisquam minima. Sit nihil quidem perspiciatis obcaecati ut? Neque, itaque
+        ipsam corrupti accusamus tempore consequatur minus atque totam officiis ea
+        <span class="bold italic">
+            <a class="link" href="#">voluptatum.</a>
+        </span>
+    </p>
+    
+    
+
+
+</body>
+
+</html>

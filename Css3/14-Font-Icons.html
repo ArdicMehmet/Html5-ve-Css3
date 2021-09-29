@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Font-Icons</title>
+    <!-- Font Linkleri -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap" rel="stylesheet">
+
+    <!-- İcon Linkleri -->
+    <script src="https://kit.fontawesome.com/c89aaa9364.js" crossorigin="anonymous"></script> <!-- fontawesome sitesi-->
+
+    <style>
+        body {
+            font-size: 20px;
+            /*Birşey yazmadığımızda varsayılan 16px dir*/
+        }
+
+        p {
+            font-size: 25px;
+            /* 3em (O an kaç px ise 3 katı büyücek, Yani 300% yazmak ile aynı şey)*/
+            font-family: cursive;
+            /* Basic Times New Romandır*/
+        }
+
+        span {
+            font-weight: bold;
+            font-family: "Audiowide", sans-serif;
+        }
+
+        .Regular400 {
+            font-family: 'Grey Qo', cursive;
+            font-size: 3em;
+            padding: 0;
+            
+
+        }
+
+        .clearfix {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+       
+    </style>
+</head>
+
+<body class="clearfix">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, sapiente.</p>
+    <span>Span içi Lorem ipsum dolor sit amet.</span>
+    <p class="Regular400 ">Regular 400 font tipi (Google Fonts)</p>
+    <i class="fab fa-accessible-icon fa-10x "></i> <!-- Sonuna fa-10x yazarsak iconun boyutu (10x 10em demek) -->
+    <ul class="fa-ul">
+        <hr class="fa-spin" style="width: 100px; ">
+        <li>
+            <span class="fa-li"><i class="fas fa-check square "></i></span> Eleman1
+        </li>
+        <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>fa-pulse</li>
+        <li><span class="fa-li"><i class="fas fa-spinner fa-spin"></i></span>fa-spin</li>
+        <li><span class="fa-li"><i class="far fa-square"></i></span>Eleman3</li>
+    </ul>
+
+</body>
+
+</html>

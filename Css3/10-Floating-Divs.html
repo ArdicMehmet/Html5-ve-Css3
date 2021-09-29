@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Floating Divs</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            border: 1px solid gray;
+
+        }
+
+        #container {
+
+            background-color: gray;
+
+        }
+
+        .box1 {
+
+            background-color: greenyellow;
+            float: left;
+        }
+
+        .box2 {
+
+            background-color: rgb(69, 132, 214);
+            float: left;
+        }
+
+        .box3 {
+
+            background-color: rgb(228, 46, 46);
+            float: left;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <p> Clear Fix işlemi sonrası görüntü : </p>
+    <div id="container" class="clearfix">
+        <!-- Float işlemi ile görüntü akışın dışına çıktığı için div kendini
+            hizalayamıyor bundan dolayı 2 yöntem var 
+            1-) Kapsayıcı divin overflow özelliğini auto yapıyoruz
+            2-) Clearfix in ::after özelliği için sınıfı oluşturup  özelliğini  
+            kapsayıcı div e veriyoruz -->
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+    <hr>
+    <!-- Bu işlemleri yapmazsak böyle gözükür -->
+    <p> Clear Fix işlemi öncesi görüntü : </p>
+    <p>Float işleminden dolayı görüntü normal akışına çıktığından fix işlemi yapmazsak aşşağıda görüldüğü gibi 
+        background gri rengi gözükmez bu şekilde
+    </p>
+    <div id="container" >
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+</body>
+
+</html>

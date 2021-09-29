@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .red {
+            background-color: red;
+
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .padding {
+            padding: 50px;
+
+
+
+
+        }
+
+        .margin {
+            margin: 50px;
+
+        }
+
+        .box {
+            width: 250px;
+            height: auto;
+            border: 5px solid black;
+        }
+
+        .borderbox {
+            box-sizing: border-box; /* Margin padding ve border boyutunu içe doğru alır ve dışarı genişleme yapmaz*/
+        }
+        .contentbox{
+            box-sizing: content-box; /* Margin padding ve border boyutlarının toplamı kadar dışarıya doğru genişler*/
+        }
+    </style>
+</head>
+
+<body style="height: 5000px;">
+
+
+
+    <div class="green box margin padding borderbox">
+        <p><h4>Borderbox</h4> <hr> aaaaaa aaaaaaaa aaaaaaa aaaaaaaaaa Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, esse
+            laborum! Voluptatum molestias a optio dicta, voluptate, fugiat alias eaque numquam, suscipit vero nobis
+            minima reprehenderit! Quaerat amet numquam saepe ab dicta ratione natus molestias, ducimus debitis
+            cupiditate mollitia iste eveniet omnis, blanditiis vero at delectus nesciunt tempora, rem sequi? Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit. Placeat totam tempore quo dolorem sed voluptatum
+            eligendi unde numquam, beatae reiciendis, hic debitis quidem odio sint similique tempora perspiciatis aut
+            iure tenetur! Quidem excepturi eius quos maxime amet voluptatem aperiam soluta sequi nam. Tempora magni ipsa
+            nostrum, neque illo dolore veniam amet esse aperiam, ad earum mollitia, atque cum a nam totam veritatis
+            dicta inventore modi dolores placeat repellat adipisci quod. Sint voluptatibus unde dolorum reiciendis alias
+            ipsum est explicabo odit.</p>
+    </div>
+    <div class="red box margin padding contentbox"><h4>Contentbox</h4> <hr> aaaaaa aaaaaaaa aaaaaaa aaaaaaaaaa Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, esse
+        laborum! Voluptatum molestias a optio dicta, voluptate, fugiat alias eaque numquam, suscipit vero nobis
+        minima reprehenderit! Quaerat amet numquam saepe ab dicta ratione natus molestias, ducimus debitis
+        cupiditate mollitia iste eveniet omnis, blanditiis vero at delectus nesciunt tempora, rem sequi? Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Placeat totam tempore quo dolorem sed voluptatum
+        eligendi unde numquam, beatae reiciendis, hic debitis quidem odio sint similique tempora perspiciatis aut
+        iure tenetur! Quidem excepturi eius quos maxime amet voluptatem aperiam soluta sequi nam. Tempora magni ipsa
+        nostrum, neque illo dolore veniam amet esse aperiam, ad earum mollitia, atque cum a nam totam veritatis
+        dicta inventore modi dolores placeat repellat adipisci quod. Sint voluptatibus unde dolorum reiciendis alias
+        ipsum est explicabo odit.</div>
+
+
+</body>
+
+</html>

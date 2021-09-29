@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link ve Button Biçimlendirme</title>
+    <style>
+        .container{
+            border: 2px solid #ddd;
+            width: 40%;
+            box-sizing: border-box;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        .mac img{
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        
+        .mac li{
+            line-height:20px;
+            margin :10px 15px 10px 10px;
+            list-style-type:none;
+
+        }
+        .sol-taraf{
+            width: 70%;
+           float: left;
+        }
+        .sag-taraf{
+            width: 30%;
+            display: inline-block;
+        }
+        .clearfix::after{
+            content: " ";
+            display: block;
+            clear: both;
+        }
+        .skor{
+            float: right;
+            
+        }
+        .mac{
+            border-right: 2px solid #ddd;
+        }.sag-taraf p:first-child{
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 3px;
+        }
+        .date{
+            opacity: 0.6;
+            text-align: center;
+            display: block;
+        }
+        .sag-taraf iframe{
+            width: 50px;
+            height: 25px;
+            margin-left: 65px;
+            margin-top: 5px;
+        }
+        .mac .kaybeden{
+            opacity: 0.6;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="sol-taraf">
+            <ul class="mac">
+                <li class="kaybeden"><img src="../../../tottenham.png" alt="">Tottenham<span class="skor">0</span></li>
+                <li><img src="../../../chelsea.png" alt="">Chelsea<span class="skor">3</span></li>
+            </ul>
+        </div>
+        <div class="sag-taraf">
+            <p>MS</p>
+            <span class="date"> 19/09 Paz</span>
+            <iframe width="30" height="20" src="https://www.youtube.com/embed/OCDqs1cS5ic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+    </div>
+    <div class="container clearfix">
+        <div class="sol-taraf">
+            <ul class="mac">
+                <li class="kaybeden"><img src="../../../tottenham.png" alt="">Tottenham<span class="skor">0</span></li>
+                <li><img src="../../../chelsea.png" alt="">Chelsea<span class="skor">3</span></li>
+            </ul>
+        </div>
+        <div class="sag-taraf">
+            <p>MS</p>
+            <span class="date"> 19/09 Paz</span>
+            <iframe width="30" height="20" src="https://www.youtube.com/embed/OCDqs1cS5ic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+    </div>
+    <div class="container clearfix">
+        <div class="sol-taraf">
+            <ul class="mac">
+                <li class="kaybeden"><img src="../../../tottenham.png" alt="">Tottenham<span class="skor">0</span></li>
+                <li><img src="../../../chelsea.png" alt="">Chelsea<span class="skor">3</span></li>
+            </ul>
+        </div>
+        <div class="sag-taraf">
+            <p>MS</p>
+            <span class="date"> 19/09 Paz</span>
+            <iframe width="30" height="20" src="https://www.youtube.com/embed/OCDqs1cS5ic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+    </div>
+ 
+</body>
+</html>

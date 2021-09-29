@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <h1>Mehmet Turizm</h1>
+    <hr>
+    <h3>Sitemize hoşgeldiniz. Sitemizden otobüs bileti alabilirsiniz.</h3>
+
+    <form action="gonderilecek-adres">
+
+        <p>
+            İsim : <input type="text" name="isim" required placeholder="Doldurulması zorunlu alan">
+        </p>
+        <p>
+            Soyisim : <input type="text" name="soyisim" required placeholder="Doldurulması zorunlu alan">
+        </p>
+        <p>
+            Telefon : <input type="tel" name="telefon" required placeholder="Doldurulması zorunlu alan">
+        </p>
+        <p>
+            Cinsiyet <br>
+            Erkek : <input type="radio" name="Cinsiyet">
+            Kadın : <input type="radio" name="Cinsiyet">
+        </p>
+        <p>
+            İlgilenilen spor dalları : <br>
+            Basketbol : <input type="checkbox" name="Hobi">
+            Futbol : <input type="checkbox" name="Hobi">
+            Voleybol : <input type="checkbox" name="Hobi">
+            Hentbol : <input type="checkbox" name="Hobi">
+        </p>
+        <p>
+            <b>Nereden</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Nereye</b>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b>Tarih</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<b>Saat</b><br>
+            <select name="Kalkis">
+                <option>Eskişehir</option>
+                <option>Adana</option>
+                <option>Bolu</option>
+                <option>Gaziantep</option>
+                <option>Balikesir</option>
+            </select>
+            <select name="Varis">
+                <option>Adana</option>
+                <option>Eskişehir</option>
+                <option>Bolu</option>
+                <option>Gaziantep</option>
+                <option>Balikesir</option>
+            </select>
+            <input type="date" name="Tarih">
+            <input type="time" name="Saat">
+        </p>
+        <p>
+            <input type="submit" value="Sorgula">
+        </p>
+
+    </form>
+
+</body>
+
+</html>

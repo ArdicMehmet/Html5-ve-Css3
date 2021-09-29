@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Hemen Üye Ol</title>
+</head>
+
+<body>
+    <form action="adres">
+        <h4>Hesap Bilgileriniz</h4>
+        <p id="HesapBilgileri">
+        <p>Kullanıcı Adı : <input type="text" name="KullaniciAdi" placeholder="Kullanıcı Adı Giriniz" required><br></p>
+        <p>Eposta : <input type="email" name="Eposta" placeholder="e-posta giriniz" required></p>
+        <p>Parola : <input type="password" name="Parola" placeholder="parola giriniz" required></p>
+        </p>
+
+        <h4>Kişisel Bilgileriniz</h4>
+        <p id="KisiselBilgiler">
+        <p>Ad : <input type="text" name="Ad"> </p>
+        <p>Soyad : <input type="text" name="Soyad"></p>
+        <p>Şehir : 
+            <select name="Sehir">
+                <option value="Adana">Adana</option>
+                <option value="Mersin">Mersin</option>
+                <option value="Eskişehir">Eskişehir</option>
+                <option value="Diyarbakir">Diyarbakir</option>
+            </select></p>
+        <p>Cinsiyet : <input type="radio" name="Cinsiyet" value="Erkek"> Erkek <input type="radio"
+                name="Cinsiyet" value="Kadin"> Kadin </p>
+        <p>Hobileriniz : 
+            <input type="checkbox" name="Hobi" value="Sinema">Sinema
+            <input type="checkbox" name="Hobi" value="Gezmek">Gezmek
+            <input type="checkbox" name="Hobi" value="Spor">Spor
+            <input type="checkbox" name="Hobi" value="Kitap">Kitap
+        </p>
+        <input type="submit" value="Kaydet">
+        <input type="reset" value="Sıfırla">
+
+      
+
+        </p>
+
+    </form>
+</body>
+
+</html>

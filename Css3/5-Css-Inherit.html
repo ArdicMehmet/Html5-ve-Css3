@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Css Inherit</title>
+
+    <style>
+
+    /*Bir etiket üst etiketlerinden miras alması durumuna Css inherit diyoruz
+    Örnek body color red yapsak aşşağıda link etiketi olan a olsa o etkilenmiyor red den.
+    */
+    /* Etiket Css > Class Css > Id Css > Inline Css  ----  Genelden Özele  */
+    body{
+
+        background-color: red !important;
+        margin: 0px;
+        padding: 0px;
+    }
+    a{
+        background-color: lightblue;
+        color:inherit;    /* Normalde a etiketi üst etiketlerin renk css inden etkilenmez ama bunu yazarsak
+                             üst etiketten color miras alır   */
+
+    }  
+    div#div1{
+        background-color: lightblue ;
+        
+    }  
+    :target{
+
+        background-color: lawngreen;
+    }
+    ul li{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        padding: 15px;
+    }
+    ul{
+
+        margin: 0px;
+        padding: 0px;
+    }
+    input[type="text"]:focus,input[type="password"]:focus{
+
+        background-color: coral;
+        
+    }
+    input{
+        border-radius: 10px;
+    }
+
+    </style>
+</head>
+
+<body>
+
+        <div id="div1" style="background-color: lightsalmon;">
+            <ul>
+                <li id="id1"><a  href="#id1">Link 1</a></li>
+                <li id="id2"><a   href="#id2">Link 2</a></li>
+                <li id="id3"><a  href="#id3">Link 3</a></li>
+            </ul>
+            
+        </div>
+        <div>
+            <p>Kullanıcı adı : <input type="text" placeholder="" required></p> 
+            <p>Şifre : <input type="password"></p>
+        </div>
+
+
+
+
+</body>
+
+</html>

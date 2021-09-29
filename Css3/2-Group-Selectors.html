@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Group Selectors</title>
+
+    <style>
+        /*  *{}          Tüm etiketler
+        p{}          Tüm p etkiletleri
+        div p{}      div içindeki tüm p etiketleri
+        div,p {}     tüm div ve p etiketleri
+        div>p{}      bir üst etiketi div olan tüm p etiketleri
+        p ~ div{}    p ile aynı seviyede olan ve p etiketinden sonra gelen tüm div etiketleri
+        p + div{}    p etiketinden sonra hemen arkasından gelen ilk div etiketleri*/
+
+        div + p {
+            border: 1px solid yellowgreen;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p> üst etiketi div</p>
+    </div>
+    <p>div arkasına gelen p etiketi</p>
+    <span><p>deneme</p> </span>
+    <h1>d</h1>
+    <div></div>
+    <p>Paragraf2</p>
+    <p>Paragraf3</p>
+</body>
+
+</html>

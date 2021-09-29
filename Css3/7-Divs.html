@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Divs</title>
+    <style>
+        div.section-one {
+
+            width: 40%;
+            height: 100px;
+            background-color: blue;
+            overflow: scroll ;   /* Normalde taşma olursa alttaki etiketinde üstüne yazarak devam eder, ama
+                                    scroll bar yaparsak scroll oluşur taşma yerine*/
+        }
+
+        div.section-two {
+
+            width: 30%;       /* Burda scroll olmadığı için aşşağıda div içinden taşanlar p etiketi üzerine çıktı*/
+            height: 100px;
+            background-color: rgb(151, 212, 81);
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section-one">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="section-two">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nisi.</p>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atrribute Selectors</title>
+    <style> /* Attribute Selectors*/
+        p[title]{
+            padding: 5px;
+            border: 1px solid green;
+        }
+        p[title="third paragraph"],input[type="text"]{      /* Title attribute third paragraph olan p etiketleri*/
+
+            background-color: gold;
+        }
+        p[title~="forth"]{                        /* Title attribute içinde forth kelimesi geçen tüm p etiketleri */
+            background-color: yellowgreen;
+        }
+        a[href^="https"][target="_blank"]{  /*href özelliği https ile başlayan ve target'ı blank olan tüm etiketler*/
+            color: rgb(28, 40, 211);
+        }
+        
+        [href$=".com"]{         /* href özelliği .com ile biten tüm etiketler*/
+            color: rgb(56, 218, 50);
+        }
+       
+
+    </style>
+</head>
+
+<body>
+    
+    <h1>Attribute Selectors</h1>
+    <p>This is a paragraph without the title attribute.</p>
+    <p title="second">
+        p[title] selects all paragraphs containing a title attribute. 
+    </p>
+    <p title="third paragraph">
+        p[title~="paragraph"] selects all paragraphs with a title attribute containing the word, paragraph.
+    </p>
+    <p title="forth paragraph">
+
+        p[title="#4 paragraph"] select all paragraphs with a title attribute containing the exact text, #4 paragraph. Mtches are case-sensitive and must match letter-for-letter including whitespace.
+    </p>
+    <p title="href">
+        <a href="http://www.google.com">http google</a>
+        <a href="https://www.youtube.net" target="_blank">https youtube</a>
+    </p>
+    <input type="text"> <input type="button" value="Button">
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Preimier Lig Table</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+
+            width: 40%;
+            margin-top: 20px;
+            margin-left: 20px;
+            padding-top: 5px;
+            border: 2px solid #ddd;
+            border-radius: 20px;
+        }
+
+        .sol {
+
+            width: 70%;
+            height: 100px;
+            float: left;
+            padding: 5px 10px 10px 20px;
+
+
+        }
+
+        .sag {
+
+            width: 30%;
+            height: 100px;
+            display: inline-block;
+            padding: 5px 10px 10px 10px;
+        }
+
+        .clearfix::after {
+            content: " ";
+            display: block;
+            clear: both;
+        }
+
+        .sol table {
+            width: 100%;
+            height: 80px;
+            border-right: 2px solid #ddd;
+
+        }
+
+        .scorboard tr td.one {
+            width: 10%;
+        }
+
+        .scorboard td.two {
+            width: 80%;
+        }
+
+        .scorboard td.three {
+            width: 10%;
+
+        }
+
+        .scorboard td {
+            padding: 5px;
+        }
+
+        .scorboard img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .loser {
+            opacity: 0.5;
+        }
+
+        .sag p {
+            text-align: center;
+        }
+
+        span {
+            text-align: center;
+            display: block;
+        }
+
+        .date {
+            opacity: 0.5;
+            margin-top: 5px;
+        }
+        iframe{
+            margin-top: 5px;
+            margin-left: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container clearfix">
+        <div class="sol">
+            <table class="scorboard">
+                <tr class="loser">
+                    <td class="one"><img src="../../../tottenham.png" alt=""></td>
+                    <td class="two">Tottenham</td>
+                    <td class="three">0</td>
+                </tr>
+                <tr>
+                    <td class="one"><img src="../../../chelsea.png" alt=""></td>
+                    <td class="two">Chelsea</td>
+                    <td class="three">3</td>
+                </tr>
+            </table>
+        </div>
+        <div class="sag">
+            <span>MS</span>
+            <span class="date">19/09</span>
+            <iframe width="40" height="25" src="https://www.youtube.com/embed/STO-KfG80Zw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+
+</html>

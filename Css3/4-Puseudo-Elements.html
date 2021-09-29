@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        /*--- Pseudo Elements : Eğerki petiketi altındaki ilk elemana vb. ulaşıp değiştirmek istersek kullanıyoruz---*/
+
+        p::first-line {
+
+            word-spacing: 2px;
+            /*Kelimelerin arasındaki boşluk*/
+            letter-spacing: 1px;
+            /* harflerin arasındaki boşluk*/
+
+        }
+
+        p.about::first-line {
+            color: green;
+
+        }
+
+        p::after {
+            content: "Yazan : Mehmet";
+            display: block;
+            padding: 10px;
+            background-color: gold;
+            text-align: right;
+
+        }
+
+        /*--------- Pseudo Class : Bir etiketin altındaki etiket gruplarına ulaşmak için ----------*/
+        ul {
+
+            background-color: gold;
+            padding: 5px;
+        }
+
+        ul li {
+            padding: 10px;
+            margin-bottom: 10px;
+            list-style-type: none;
+            background-color: greenyellow;
+        }
+
+        ul li:last-child {
+            margin-bottom: 0px;
+        }
+
+        div p:first-child {
+            background-color: rgb(34, 122, 194);
+        }
+
+        ul li:last-child {
+
+            background-color: red;
+        }
+
+        ul li:nth-of-type(even) {
+            /* Çift elemanlar */
+
+            border: 2px solid green;
+        }
+
+        ul li:nth-of-type(odd) {
+            /* Tek sayi sırasındaki Liste elemanları*/
+
+            border: 2px solid blue;
+        }
+        div p:nth-of-type(even){
+
+            background-color: chocolate;
+
+        }   
+        a {
+            padding: 5px 8px;
+            text-decoration: none;
+            display: block;
+            width: 80px;
+            border: 1px solid gray;
+            margin-bottom: 10px;
+            
+        }
+
+        a:link {                /* Linke tıklanmadan önceki rengi*/
+            color: red;
+        }
+
+        a:visited {              /* Linke tıklandıktan sonraki rengi*/
+            color: gray;
+        
+        }
+
+        a:hover {               /* Linkin üstüne mouse ile geldiğinde olacak olay*/
+            color: white;
+            background: green;
+        }
+
+        a:active {               /* Link'e tıklanırken arka planı gold oluyor*/
+            color: green;
+            background: gold;
+        }
+
+        span {
+            display: none;      /* display'i yani görünürlüğünü kapatıyor*/
+            background: yellow;
+            padding: 20px;
+        }
+
+        div:hover span {           /* div'in üzerine gelindiğinde span etiketinin display'i görünür ve block oluyor*/                 
+            display: block;
+        }
+        :target{                          /* link e tıklandığında link adresi nereyi gösteriyorsa
+                                         o etikete bu değerler uygulanır, burdaki örnekte id si news1 
+                                         ve news 2 ye uygulanıyor, aşşağıda */
+            background-color: sienna;
+            border: 2px solid red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p >Merhaba dünya</p>
+
+    <ul>
+        <li id="news1">1th Child</li>
+        <li id="news2">2th Child</li>
+        <li>3th Child</li>
+    </ul>
+
+    <div>
+        <p>P 1</p>
+        <p>P 2</p>
+        <p>P 3</p>
+        <p>p 4</p>
+    </div>
+
+    <a href="#news1">Google</a>
+    <a href="#news2">Youtube</a>
+    <a href="http://www.facebook.com" target="_blank">Facebook</a>
+
+    <div >
+        Dünyadan Selamlar
+        <span>
+            <p>Merhaba</p> 
+        </span>
+    </div>
+
+
+</body>
+
+</html>

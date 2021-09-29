@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tablo Biçimlendirme</title>
+    <style>
+        table {
+            width: 100%;
+            border: 1px solid rgb(158, 158, 158);
+            margin: 0px;
+            padding: 0px;
+            border-collapse: collapse;  /* Tablonun hücreler arası boşluklarını siler */
+        }
+
+        table tr th {
+
+            margin: 0px;
+            padding: 10px;
+        }
+
+        table td {
+            margin: 0px;
+            padding: 10px;
+            border: 1px solid grey;
+        }
+
+        table th {
+            background-color: rgb(71, 121, 212);
+            color: white;
+            text-align: left;
+            border: 1px solid rgb(84, 228, 149);
+        }
+
+        table tr:nth-of-type(odd) {
+
+            background-color: rgb(228, 224, 224);
+        }
+
+        table th:nth-of-type(odd) {
+            width: 20%;
+        }
+
+        table th:nth-of-type(even) {
+            width: 60%;
+        }
+
+        table tr:hover {
+            background-color: rgb(185, 183, 183);
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Product1</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>Product1</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>Product1</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>Product1</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>$10</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
